@@ -6666,6 +6666,7 @@ if test "x$ac_system" = "xLinux"; then
   plugin_mcelog="yes"
   plugin_mdevents="yes"
   plugin_memory="yes"
+  plugin_mmc="yes"
   plugin_nfs="yes"
   plugin_numa="yes"
   plugin_processes="yes"
@@ -7089,6 +7090,7 @@ AC_PLUGIN([memory],              [$plugin_memory],            [Memory usage])
 AC_PLUGIN([mic],                 [$with_mic],                 [Intel Many Integrated Core stats])
 AC_PLUGIN([modbus],              [$with_libmodbus],           [Modbus plugin])
 AC_PLUGIN([mqtt],                [$with_libmosquitto],        [MQTT output plugin])
+AC_PLUGIN([mmc],                 [$plugin_mmc],               [MMC statistics])
 AC_PLUGIN([multimeter],          [$plugin_multimeter],        [Read multimeter values])
 AC_PLUGIN([mysql],               [$with_libmysql],            [MySQL statistics])
 AC_PLUGIN([netapp],              [$with_libnetapp],           [NetApp plugin])
